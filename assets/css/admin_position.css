@@ -1,0 +1,27 @@
+.mpos {
+    color: white;
+    font-size: 19.4px;
+    font-weight: 700;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+}
+
+.margin {
+    margin-top: 10px !important;
+}
+
+.mpos2 {
+    color: white;
+    font-size: 19.4px;
+    font-weight: 700;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+.add_btn {
+    font-size: 19.8px;
+}
+
+.ballot-title {
+    color: white;
+}

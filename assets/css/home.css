@@ -1,0 +1,32 @@
+.home-row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.box-title {
+    text-align: center;
+    font-size: 48px;
+}
+
+.wrapper-bg {
+    background-image: url("../img/neucover.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+}
+
+.logo-neu{
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-top: -6px;
+}
+
+.cand-name {
+    font-size: 26px !important;
+}
