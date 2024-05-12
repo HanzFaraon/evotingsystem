@@ -83,7 +83,7 @@
 
 /***************** HERO SECTION ****************/
 
-#hero-container {
+#index-container {
     width: 100%;
 }
   
@@ -106,7 +106,7 @@
     opacity: 0.8;
 }
   
-.hero-title {
+.index-title {
     font-family: Arial Bold, sans-serif;
     color: white;
     font-size: 3rem;
@@ -128,12 +128,12 @@
     flex-wrap: wrap;
 }
 
-#hero-content {
+#index-content {
     color: var(--color-bg-variant);
     text-align: center;
 }
 
-.hero-button {
+.index-button {
     background-color: black;
     padding: 1rem;
     width: 200px;
@@ -211,6 +211,50 @@
     border: var(--border);
 }
 
+.card {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.card-body {
+    background-color: #f7f7f7;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.card-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.card-text {
+    margin-bottom: 10px;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    text-decoration: none;
+}
+
+.card-img {
+    width: 200px !important;
+    height: 200px !important;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-left: 40px;
+    margin-bottom: 10px;
+}
+
+.card-title {
+    text-align: center;
+}
 /***************** FOOTER ****************/
 
 footer {
