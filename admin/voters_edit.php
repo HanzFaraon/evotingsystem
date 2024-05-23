@@ -3,6 +3,7 @@
 
 	if(isset($_POST['edit'])){
 		$id = $_POST['id'];
+		$email = $_POST['email'];
 		$firstname = $_POST['firstname'];
 		$lastname = $_POST['lastname'];
 		$password = $_POST['password'];
@@ -11,14 +12,7 @@
 		$query = $conn->query($sql);
 		$row = $query->fetch_assoc();
 
-		if($password == $row['password']){
-			$password = $row['password'];
-		}
-		else{
-			$password = password_hash($password, PASSWORD_DEFAULT);
-		}
-
-		$sql = "UPDATE voters SET firstname = '$firstname', lastname = '$lastname', password = '$password' WHERE id = '$id'";
+		$sql = "UPDATE voters SET email = '$email', firstname = '$firstname', lastname = '$lastname', password = '$password' WHERE id = '$id'";
 		if($conn->query($sql)){
 			$_SESSION['success'] = 'Voter updated successfully';
 		}

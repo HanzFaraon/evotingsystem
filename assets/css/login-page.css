@@ -73,5 +73,19 @@ body {
 .login-logo {
     color: black !important;
 }
-  
+
+a:link
+{
+    color:#FFFFFF;
+}
+
+a:visited
+{
+    color:#FFFFFF;
+}
+
+a:hover 
+{
+    color:#FFFFFF;
+}
   

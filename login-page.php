@@ -58,6 +58,9 @@
                     <div class="col-xs-4">
                         <button type="submit" class="btn btn-success btn-block btn-flat" name="login">Log In</button>
                     </div>
+                    <div class="col-xs-4">
+                        <button class="btn btn-primary btn-block btn-flat"><a href="admin/index.php">Admin</a></button>
+                    </div>
                 </div>
             </form>
         </div>

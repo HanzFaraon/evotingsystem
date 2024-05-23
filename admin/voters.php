@@ -48,6 +48,7 @@
                 <table id="example1" class="table table-bordered">
                   <thead>
                     <th>Voters ID</th>
+                    <th>Email</th>
                     <th>First Name</th>
                     <th>Last Name</th>
                     <th>Profile</th>
@@ -62,6 +63,7 @@
                         echo "
                           <tr>
                             <td>".$row['voters_id']."</td>
+                            <td>".$row['email']."</td>
                             <td>".$row['firstname']."</td>
                             <td>".$row['lastname']."</td>
                             <td>
@@ -69,7 +71,7 @@
                               <a href='#edit_photo' data-toggle='modal' class='pull-right photo' data-id='".$row['id']."'>Edit</a>
                             </td>
                             <td>
-                              <button class='btn btn-success btn-sm edit btn-flat' data-id='".$row['id']."'> Edit</button>
+                              <button class='btn btn-success btn-sm edit btn-flat' data-id='".$row['id']."'> Edit & Email</button>
                               <button class='btn btn-danger btn-sm delete btn-flat' data-id='".$row['id']."'> Delete</button>
                             </td>
                           </tr>
@@ -97,6 +99,13 @@
       getRow(id);
     });
 
+    $(document).on('click', '.send', function(e){
+      e.preventDefault();
+      $('#send').modal('show');
+      var id = $(this).data('id');
+      getRow(id);
+    });
+
     $(document).on('click', '.delete', function(e){
       e.preventDefault();
       $('#delete').modal('show');
@@ -120,6 +129,8 @@
       dataType: 'json',
       success: function(response){
         $('.id').val(response.id);
+        $('#edit_voters_id').val(response.voters_id);
+        $('#edit_email').val(response.email);
         $('#edit_firstname').val(response.firstname);
         $('#edit_lastname').val(response.lastname);
         $('#edit_password').val(response.password);
